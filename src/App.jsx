@@ -1,11 +1,12 @@
-
+import HeroSection from "@components/HeroSection";
+import Navbar from "@components/Navbar";
 function App() {
-
   return (
-    <>
-    <div className="text-red-500">Hiiii</div>
-    </>
-  )
+    <main className="overflow-y-hidden text-neutral-200 antialiased">
+      <HeroSection />
+      <Navbar />
+    </main>
+  );
 }
 
-export default App
+export default App;
