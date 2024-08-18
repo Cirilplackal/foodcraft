@@ -4,6 +4,8 @@ import Dishes from "@components/Dishes";
 import About from "@components/About";
 import Mission from "@components/Mission";
 import Expertise from "@components/Expertise";
+import Review from "@components/Review";
+import ContactSection from "@components/ContactSection";
 function App() {
   return (
     <main className="overflow-y-hidden text-neutral-200 antialiased">
@@ -12,7 +14,9 @@ function App() {
       <Dishes />
       <About />
       <Mission />
-    <Expertise/>
+      <Expertise />
+      <Review />
+      <ContactSection/>
     </main>
   );
 }
