@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
 const DishCard = ({ project }) => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, delay: 0.5 }}
+    >
       <img
         src={project?.image}
         alt={project?.title}
@@ -12,7 +18,7 @@ const DishCard = ({ project }) => {
         </h3>
         <p className="text-sm">{project.description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
